@@ -139,7 +139,7 @@
 
                         //on va créer notre message
                         $message = (new Swift_Message('Validation d\'email'))
-                        ->setFrom([$_email => $_first_name .' '. $_last_name])
+                        ->setFrom([$_email => $_first_name .' '. $_last_name]) 
                         ->setTo($_email)
                         ->addPart($msg, "text/html")
                         ->setBody($msg);
